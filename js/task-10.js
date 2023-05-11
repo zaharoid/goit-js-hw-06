@@ -10,17 +10,6 @@ const refs = {
   destroy: document.querySelector('[data-destroy]'),
   boxes: document.querySelector('#boxes')
 }
-
-// console.log(refs.amount);
-// console.log(refs.create);
-// console.log(refs.destroy);
-// console.log(refs.boxes);
-
-
-
-
-
-
 ;
 
 refs.create.addEventListener('click', onTakeValue)
@@ -43,7 +32,6 @@ function createBoxes (amount) {
 function onTakeValue () {
   const amount = refs.amount.value
   return createBoxes(amount);
-  
 }
 
 function onClickDestroy () {
